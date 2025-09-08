@@ -1,0 +1,125 @@
+.box{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: 70px 500px 200px;
+}
+
+.header{
+    height:90px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start:1;
+    grid-row-end: 2;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(7, 6, 6);
+    color: white;
+    border : 1px solid rgb(16, 17, 17);
+}
+.subheader {
+    height: 40px;                 
+    padding: 0 10px;              
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;          
+    justify-content: space-evenly;
+    background-color: #232f3e;
+    color: white;
+    border: 1px solid black;
+    font-size: 14px;              /*  */
+}
+
+
+.box1{
+border: 1px dotted red;
+background-color: rgb(11, 22, 18);
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2,1fr);
+/* grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2; */
+gap: 10px;
+}
+.box11{
+width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color: rgb(10, 5, 78);
+margin-top: 20px;
+margin-left: 10px;
+
+
+}
+
+.box12{
+    width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color:bisque;
+margin-top: 20px;
+}
+.box13{
+    width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color:cornsilk;
+margin-left: 10px;
+}
+
+.box14{
+    width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color:darkgrey;
+}
+.box2{
+border: 1px dotted red;
+background-color:beige;
+}
+
+.box3{
+border: 1px dotted red;
+background-color:burlywood;
+}
+.box4{
+border: 1px dotted red;
+background-color: chocolate;
+}
+
+/* .box5{
+border: 1px dotted red;
+background-color: coral;
+} */
+
+.box3:hover{
+    background-color: purple;
+}
+
+.signin{
+    background-color: rgb(22, 21, 22);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.orders{
+    background-color: rgb(18, 14, 17);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.return{
+    background-color: rgb(18, 14, 17);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
