@@ -1,125 +1,116 @@
-.box{
+.box {
     display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: 70px 500px 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 110px 60px 500px;
 }
 
-.header{
-    height:90px;
+.header {
+    height: 110px;
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start:1;
+    grid-row-start: 1;
     grid-row-end: 2;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(7, 6, 6);
+    background-color: rgb(35, 52, 72);
     color: white;
-    border : 1px solid rgb(16, 17, 17);
+    border: 1px solid rgb(9, 194, 70);
 }
+
 .subheader {
-    height: 40px;                 
-    padding: 0 10px;              
-    grid-column: 1 / 5;
-    grid-row: 2 / 3;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
     display: flex;
-    align-items: center;          
     justify-content: space-evenly;
     background-color: #232f3e;
+    align-items: center;
     color: white;
-    border: 1px solid black;
-    font-size: 14px;              /*  */
 }
 
-
-.box1{
-border: 1px dotted red;
-background-color: rgb(11, 22, 18);
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-template-rows: repeat(2,1fr);
-/* grid-column-start: 1;
-grid-column-end: 4;
-grid-row-start: 1;
-grid-row-end: 2; */
-gap: 10px;
-}
-.box11{
-width: 150px;
-height: 150px;
-border: 1px solid red;
-background-color: rgb(10, 5, 78);
-margin-top: 20px;
-margin-left: 10px;
-
-
+.footer {
+    height: 70px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(8, 15, 46, 0.863);
+    color: white;
+    border: 1px solid rgb(9, 194, 70);
 }
 
-.box12{
+.box1,
+.box3,
+.box4 {
+    background-color: rgb(14, 122, 165);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+   
+}
+
+.box11 {
     width: 150px;
-height: 150px;
-border: 1px solid red;
-background-color:bisque;
-margin-top: 20px;
+    height: 150px;
+
+    background-color: rgb(14, 122, 165);
+    margin-top: 20px;
+    margin-left: 10px;
+
 }
-.box13{
+
+.box11 img,
+.box12 img,
+.box13 img,
+.box14 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.box12,
+.box13 {
     width: 150px;
-height: 150px;
-border: 1px solid red;
-background-color:cornsilk;
-margin-left: 10px;
+    height: 150px;
+    background-color: rgb(14, 122, 165);
+    margin-top: 20px;
 }
 
-.box14{
+
+.box14 {
     width: 150px;
-height: 150px;
-border: 1px solid red;
-background-color:darkgrey;
-}
-.box2{
-border: 1px dotted red;
-background-color:beige;
+    height: 150px;
+    background-color: darkgrey
 }
 
-.box3{
-border: 1px dotted red;
-background-color:burlywood;
-}
-.box4{
-border: 1px dotted red;
-background-color: chocolate;
-}
-
-/* .box5{
-border: 1px dotted red;
-background-color: coral;
-} */
-
-.box3:hover{
-    background-color: purple;
+.box2 {
+    background-color: rgb(14, 122, 165);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
 }
 
-.signin{
-    background-color: rgb(22, 21, 22);
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
+.box3 {
+    background-color: burlywood;
 }
 
-.orders{
-    background-color: rgb(18, 14, 17);
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
+.box4 {
+    border: 1px dotted red;
+    background-color: bisque;
 }
 
-.return{
-    background-color: rgb(18, 14, 17);
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-}
 
+button {
+    width: 80px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    cursor: pointer;
+}
