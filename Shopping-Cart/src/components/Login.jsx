@@ -1,8 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const navigate = useNavigate()
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert(`Email: ${email} Password: ${password}`)
+    // navigate('/dashboard')
+  }
   return (
-    <form style={{ maxWidth: 420, margin: '0 auto', padding: 24 }}>
+    <form style={{ maxWidth: 420, margin: '0 auto', padding: 24 }} onSubmit={handleSubmit}>
       <div style={{ marginBottom: 16 }}>
         <label htmlFor="form2Example1" style={{ display: 'block', marginBottom: 8, fontWeight: 600 }}>
           Email address
@@ -18,6 +28,8 @@ const Login = () => {
             outline: 'none',
             fontSize: 14,
           }}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
 
@@ -28,6 +40,8 @@ const Login = () => {
         <input
           type="password"
           id="form2Example2"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
           style={{
             width: '100%',
             padding: '10px 12px',
@@ -48,7 +62,7 @@ const Login = () => {
       </div>
 
       <button
-        type="button"
+        type="submit"
         style={{
           width: '100%',
           backgroundColor: '#0d6efd',
@@ -60,13 +74,13 @@ const Login = () => {
           marginBottom: 16,
           fontWeight: 600,
         }}
+        onClick={handleSubmit}
       >
-        Sign in
+        Login
       </button>
 
       <div style={{ textAlign: 'center' }}>
-        <p style={{ margin: '8px 0' }}>
-          Not a member?{' '}
+        <p style={{ margin: '8px 0' }}>Not a member?{' '}
           <a href="#!" style={{ color: '#0d6efd', textDecoration: 'none' }}>Register</a>
         </p>
         <p style={{ margin: '8px 0' }}>or sign up with:</p>
